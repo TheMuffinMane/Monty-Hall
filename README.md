@@ -1,6 +1,6 @@
 # Monty-Hall
 Monty Hall game simulator 
-This is a console basd simulator, where players choose between three doors to hopefully win a prize. It shows probability by allowing users to keep or switch their choice on a door after a reveal. It has statistics tracking such as games won, lost, and breakdowns of decisions. 
+This is a console based simulator, where players choose between three doors to hopefully win a prize. It shows probability by allowing users to keep or switch their choice on a door after a reveal. It has statistics tracking such as games won, lost, and breakdowns of decisions. 
 
 # How to Play!?
 1. Select the first selection, "Start Game"

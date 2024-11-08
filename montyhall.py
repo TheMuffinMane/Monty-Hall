@@ -1,5 +1,5 @@
 import random
-
+#helps with stats shout out chatgpt
 class MontyHallGame:
     def __init__(self):
         # Initialize game statistics
@@ -22,7 +22,7 @@ class MontyHallGame:
 
         # Determine win/loss and update statistics
         if final_choice == car_door:
-            print("Congratulations! You won the car!")
+            print("Congratulations! You won the car!woooo!")
             self.games_won += 1
             if final_choice != player_choice:
                 self.switch_wins += 1

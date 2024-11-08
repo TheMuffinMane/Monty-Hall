@@ -73,11 +73,21 @@ class MontyHallGame:
         print(f"Games Won Keeping: {self.keep_wins}")
         print(f"Games Lost Keeping: {self.keep_losses}")
 
-        if self.games_played > 0:
-            print(f"Percentage of Wins Switching: {self.switch_wins / (self.switch_wins + self.switch_losses) * 100:.2f}%")
-            print(f"Percentage of Wins Keeping: {self.keep_wins / (self.keep_wins + self.keep_losses) * 100:.2f}%")
+        if (self.switch_wins + self.switch_losses) > 0:
+           switch_win_percentage = (self.switch_wins / (self.switch_wins + self.switch_losses)) * 100
+           print(f"Percentage of Wins Switching: {switch_win_percentage:.2f}%")
+        else:
+            print("Percentage of Wins Switching: No data available (no switching games played)")
+
+        if (self.keep_wins + self.keep_losses) > 0:
+            keep_win_percentage = (self.keep_wins / (self.keep_wins + self.keep_losses)) * 100
+            print(f"Percentage of Wins Keeping: {keep_win_percentage:.2f}%")
+        else:
+            print("Percentage of Wins Keeping: No data available (no keeping games played)")
+
         print("-----------------------\n")
 
+       
     def run(self):
         # Main game loop
         while True:
